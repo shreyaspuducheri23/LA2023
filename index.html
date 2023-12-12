@@ -23,13 +23,13 @@
             padding-top: 50px;
         }
         .presentation-title {
-            font-size: 24px;
+            font-size: 48px;
             font-weight: bold;
             color: var(--medium-slate-blue);
             margin-bottom: 20px;
         }
         .presenter-name {
-            font-size: 16px;
+            font-size: 24px;
             color: var(--light-coral);
             margin-bottom: 20px;
         }
@@ -38,15 +38,27 @@
             height: 600px; /* Adjusted for better visibility */
             border: none;
             background-color: white; /* iframe background */
-        }
-        .feedback-link {
-            font-size: 16px;
-            color: var(--light-coral);
             margin-bottom: 10px;
-            display: block; /* Makes the link take the full width for better clickability */
+        }
+        .feedback-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: var(--dark-orange-web);
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-block; /* Center button in the container */
+            transition: background-color 0.3s ease;
+        }
+        .feedback-button:hover {
+            background-color: var(--medium-slate-blue);
         }
         .feedback-title {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
             color: var(--dark-orange-web);
             margin-top: 40px;
@@ -60,8 +72,9 @@
             .feedback-title, .presenter-name, .presentation-title {
                 font-size: 16px;
             }
-            .feedback-link {
+            .feedback-button {
                 font-size: 14px;
+                padding: 8px 15px;
             }
         }
     </style>
@@ -71,8 +84,8 @@
         <div class="presentation-title">Quantitative Multifactorial Analysis of Student Performance in PY104</div>
         <div class="presenter-name">Presented by Shreyas Puducheri</div>
         <iframe src="https://onedrive.live.com/embed?resid=C41AD57504F10CD6%21276&authkey=!AIf-SlL2ozM7FNY&em=2&wdAr=1.7777777777777777"></iframe>
-        <a href="#" class="feedback-link">Click Here for Related Information</a>
         <div class="feedback-title">Provide Feedback</div>
+        <button onclick="window.location.href='https://forms.gle/YafJtJVdrdQHfMzD8';" class="feedback-button">Click Here to Provide Feedback</button>
         <img class="qr-code" src="qr-code-image.png" alt="QR Code for Feedback" />
     </div>
 </body>
