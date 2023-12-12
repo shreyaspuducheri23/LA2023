@@ -28,6 +28,10 @@
             color: var(--medium-slate-blue);
             margin-bottom: 20px;
         }
+        .presentation-subtitle {
+            font-size: 32px;
+            color: var(--sky-magenta);
+            margin-bottom: 20px;
         .presenter-name {
             font-size: 32px;
             color: var(--light-coral);
@@ -69,6 +73,9 @@
             width: 400px; /* Adjusted width for a smaller QR code */
             height: 400px; /* Adjusted height for a smaller QR code */
         }
+        .la-logo {
+            margin-bottom: 20 px;
+            width: 100px;
         /* Responsive adjustments */
         @media screen and (max-width: 768px) {
             .feedback-title, .presenter-name, .presentation-title {
@@ -85,11 +92,12 @@
 <body>
     <div class="presentation-container">
         <div class="presentation-title">Quantitative Multifactorial Analysis of Student Performance in PY104</div>
-        <div class="presenter-name">Presented by Shreyas Puducheri</div>
+        <div <img class="la-logo" src="la-logo.png" /> </div>
+        <div class="presenter-name">Shreyas Puducheri</div>
         <iframe src="https://onedrive.live.com/embed?resid=C41AD57504F10CD6%21276&authkey=!AIf-SlL2ozM7FNY&em=2&wdAr=1.7777777777777777"></iframe>
         <div class="feedback-title">Provide Feedback</div>
         <div <button onclick="window.location.href='https://forms.gle/YafJtJVdrdQHfMzD8';" class="feedback-button">Click Here to Provide Feedback</button></div>
-        <img class="qr-code" src="qr-code-image.png" alt="QR Code for Feedback" />
+        <div <img class="qr-code" src="qr-code-image.png" alt="QR Code for Feedback" /> </div>
     </div>
 </body>
 </html>
