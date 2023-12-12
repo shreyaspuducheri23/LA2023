@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Presentation Title</title>
+    <title>Quantitative Multifactorial Analysis of Student Performance in PY104</title>
     <style>
+        :root {
+            /* CSS HEX */
+            --risd-blue: #3544fe;
+            --medium-slate-blue: #8964e8;
+            --sky-magenta: #c87cbd;
+            --light-coral: #ed8883;
+            --dark-orange-web: #ff9122;
+        }
         .presentation-container {
             text-align: center;
             margin-top: 50px;
+            color: var(--risd-blue); /* Default text color */
         }
         .presentation-title {
             font-size: 24px;
             font-weight: bold;
-            color: #333; /* Change this color to match your website theme */
+            color: var(--medium-slate-blue);
         }
         .presentation-subtitle {
             font-size: 18px;
-            color: #666; /* Change this color to match your website theme */
+            color: var(--sky-magenta);
             margin-bottom: 20px;
         }
         .presenter-name {
             font-size: 16px;
-            color: #888; /* Change this color to match your website theme */
+            color: var(--light-coral);
             margin-bottom: 20px;
         }
         iframe {
             width: 60%;
             height: 500px;
             border: none;
+        }
+        .feedback-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--dark-orange-web);
+            margin-top: 40px;
+        }
+        .qr-code {
+            margin-top: 20px;
+            margin-bottom: 50px;
         }
         @media screen and (max-width: 768px) {
             iframe {
@@ -38,9 +57,11 @@
 <body>
     <div class="presentation-container">
         <div class="presentation-title">Quantitative Multifactorial Analysis of Student Performance in PY104</div>
-        <div class="presentation-subtitle">Physics Learning Assistant Presentation</div>
-        <div class="presenter-name">Shreyas Puducheri</div>
+        <div class="presentation-subtitle">Learning Assistant Presentation</div>
+        <div class="presenter-name">Presented by Shreyas Puducheri</div>
         <iframe src="https://onedrive.live.com/embed?resid=C41AD57504F10CD6%21276&authkey=!AIf-SlL2ozM7FNY&em=2&wdAr=1.7777777777777777"></iframe>
+        <div class="feedback-title">Provide Feedback</div>
+        <img class="qr-code" src="qr-code-image.png" alt="QR Code for Feedback" />
     </div>
 </body>
 </html>
